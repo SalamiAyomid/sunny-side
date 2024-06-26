@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+}
+nav{
+
+display: flex;
+justify-content: space-between;
+padding: 2rem 3rem;
+}
+ul{
+    display: none;
+}
+.menu i{
+    color: #fff;
+    font-size: 30px;
+}
+.firstSection{
+    background-image: url(images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 12rem;
+}
+h1{
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    text-align: center;
+    letter-spacing: 0.6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.container div{
+    display: flex;
+    justify-content: center;
+
+}
+
+.secondSection .egg, .thirdSection .cup {
+    width: 100%;
+}
+.secondSection div, .thirdSection div {
+    background-color: hsl(7deg, 67%, 96%);
+    padding: 2rem;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondSection h2, .thirdSection h2 {
+    font-family: "Fraunces", serif;
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+}
+.secondSection p, .thirdSection p {
+    color: gray;
+    line-height: 24px;
+    padding: 1rem 0;
+}
+.secondSection, .thirdSection, .forthSection {
+    display: grid;
+}
+.forthSection .design {
+background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+}
+.forthSection .graphic {
+background-image: url(images/desktop/image-graphic-design.jpg);
+
+color: hsl(167, 40%, 24%);
+
+}
+.forthSection h2 {
+    font-family: "Fraunces", serif;
+    padding-bottom: 2rem;
+}
+.forthSection p {
+    line-height: 24px;
+}
+.forthSection .photography {
+    background-image: url(images/desktop/image-photography.jpg);
+    color: hsl(198, 62%, 26%);
+
+}
+
+@media screen and (min-width: 1000px) {
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+    }
+    li a{
+        color: #fff;
+    }
+    .menu{
+        display: none;
+    }
+    .btn{
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 10px 15px;
+        color: hsl(212, 27%, 19%);
+        text-transform: uppercase;
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        transition: 0.5s;
+    }
+    .btn:hover{
+        background-color: #3EBFFF;
+        color: #fff;
+    }
+    .secondSection, .thirdSection, .forthSection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .secondSection div {
+        order: 1;
+        text-align: left;
+        padding: 6rem;
+        height: auto;
+    }
+    .secondSection .egg{
+        order: 2;
+    }
+    .thirdSection div {
+        height: auto;
+        text-align: left;
+        padding: 6rem;
+    }
+   
+    
+}
